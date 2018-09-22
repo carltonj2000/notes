@@ -20,10 +20,10 @@ test("remove fails with no notes", done => {
 });
 
 test("add", done => {
-  expect(notes.add("t1", "b1")).toBe(true);
-  expect(notes.add("t2", "b2")).toBe(true);
-  expect(notes.add("t3", "b3")).toBe(true);
-  expect(notes.add("t1", "b1")).toBe(false);
+  expect(notes.add("t1", "b1")).toEqual({ title: "t1", body: "b1" });
+  expect(notes.add("t2", "b2")).toEqual({ title: "t2", body: "b2" });
+  expect(notes.add("t3", "b3")).toEqual({ title: "t3", body: "b3" });
+  expect(notes.add("t1", "b1")).toEqual({});
   done();
 });
 

@@ -16,6 +16,9 @@
     "add": "node app.js add",
     "list": "node app.js list",
     "read": "node app.js read",
-    "remove": "node app.js remove"
+    "remove": "node app.js remove",
+    "debug": "node inspect app.js",
+    "debugnm": "nodemon inspect app.js",
+    "dbgTst": "node inspect playground/debugging.js"
   }
 }
