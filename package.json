@@ -19,6 +19,9 @@
     "remove": "node app.js remove",
     "debug": "node inspect app.js",
     "debugnm": "nodemon inspect app.js",
-    "dbgTst": "node inspect playground/debugging.js"
+    "debugnmc": "nodemon --inspect-brk app.js",
+    "dbgTst": "node inspect playground/debugging.js",
+    "dbgTstc": "node --inspect-brk playground/debugging.js",
+    "dbgTstnmc": "nodemon --inspect-brk playground/debugging.js"
   }
 }
